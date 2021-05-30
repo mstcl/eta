@@ -1,25 +1,25 @@
 :root {
-	--bg: black;
-	--fg: white;
-	--ac: #ffa38a;
-	--bg2: #202124;
+  --bg: black;
+  --fg: white;
+  --ac: #ffa38a;
+  --bg2: #202124;
 }
 @font-face {
     font-family: 'helvetica';
-  		src: url('HelveticaNeue.ttf') format('ttf');
+      src: url('HelveticaNeue.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'helvetica';
-  		src: url('HelveticaNeueBold.ttf') format('ttf');
+      src: url('HelveticaNeueBold.ttf') format('ttf');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'helvetica';
-  		src: url('HelveticaNeueItalic.ttf') format('ttf');
+      src: url('HelveticaNeueItalic.ttf') format('ttf');
     font-weight: normal;
     font-style: italic;
 }
@@ -58,101 +58,113 @@
 }
 
 * {
-	background: var(--bg);
-	color: var(--fg);
-	font-family: 'cartograph';
+  background: var(--bg);
+  color: var(--fg);
+  font-family: 'cartograph';
 }
 
 .clock {
-	line-height: 300px;
-	font-family: 'cartograph';
-  	height: 300px;
-    color: var(--fg);
-    font-size: 100px;
-    font-weight: bold;
-    letter-spacing: 7px;
-    text-shadow: 4px 4px #aaa, 8px 8px #444;
+  line-height: 300px;
+  font-family: 'cartograph';
+  height: 300px;
+  color: var(--fg);
+  font-size: 100px;
+  font-weight: bold;
+  letter-spacing: 7px;
+  text-shadow: 4px 4px #aaa, 8px 8px #444;
+  margin-bottom: -20px;
 }
 
 input.search-bar {
-	line-height: 40px;
-  	height: 40px;
-  	border: none;
-  	background: var(--bg);
-  	box-shadow: 0 0 0 3px var(--bg);
-  	border-radius: 0px;
-  	padding-top: 8px;
-  	padding-bottom: 8px;
-  	padding-left: 0%;
-  	padding-right: 0%;
-  	width: 26%;
-  	font-size: 22px;
-  	font-family: helvetica;
-  	font-weight: bold;
-  	color: var(--fg);
-  	margin-bottom: 6%;
-  	border-bottom: 6px solid;
+  line-height: 40px;
+  height: 40px;
+  border: none;
+  background: var(--bg);
+  box-shadow: 0 0 0 3px var(--bg);
+  border-radius: 0px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 0%;
+  padding-right: 0%;
+  font-size: 22px;
+  font-family: helvetica;
+  font-weight: bold;
+  color: var(--fg);
+  border-bottom: 3px solid white;
+  width: 20%;
+  transition: width 0.2s ease-in .2s
+}
+#search{
+  line-height: 40px;
+  height: 40px;
+  position: relative;
+  width: 12%;
+  text-align: centre;
+  margin-bottom: 4%;
 }
 
 .search-bar:hover, .search-bar:active, .search-bar:focus {
-	outline: none;
-	border-bottom: 4px solid;
+  outline: none;
+  border-bottom: 3px solid white;
+  width: 80%;
+  transition: width 0.2s ease-in .2s
 }
 
 input[type='text'] {
-      padding-left: 0%;
-      max-width : calc(100% - 0%);
+  padding-left: 0%;
+  max-width : calc(100% - 0%);
 }
 
 ::placeholder {
-	color: var(--fg);
-	font-style: italic;
+  color: var(--fg);
+  font-style: italic;
 }
 
 .centre {
-	margin: auto;
-	width: 100%;
-	text-align: center;
+  margin: auto;
+  width: 100%;
+  text-align: center;
 }
 
 .box {
-	margin: auto;
-	width: 100%;
+  margin: auto;
+  width: 100%;
+
 }
 
 .link {
-	display: inline-block;
-	height: 120px;
-	width: 130px;
-	padding:  1%;
-	border: 0px solid;
-	text-align: left;
-	border-left:  0px solid;
-	background-color: var(--bg);
-
+  display: inline-block;
+  height: 120px;
+  width: 130px;
+  padding:  1%;
+  border: 0px solid;
+  text-align: left;
+  border-left:  0px solid;
+  background-color: var(--bg);
 }
 
 a {
-	display: block;
-	font-family: 'helvetica';
-	line-height: 1.3em;
-	font-size: 22px;
-	color: var(--fg);
-	background: var(--bg);
-	font-weight: bold;
-	text-decoration: none;
-	outline: none;
-	transition: .2s;
-	border: 0px solid;
-	margin-top: -10%;
-	margin-bottom: 9%;
+  display: block;
+  font-family: 'helvetica';
+  line-height: 1.3em;
+  font-size: 22px;
+  color: var(--fg);
+  background: var(--bg);
+  font-weight: bold;
+  text-decoration: none;
+  outline: none;
+  transition: .2s;
+  border: 0px solid;
+  margin-bottom: 5%;
+
 }
 
 a:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 ul {
-	padding-inline-start: 0;
-	list-style: none;
+  padding-inline-start: 0;
+  list-style: none;
+
 }
