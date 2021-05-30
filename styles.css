@@ -106,7 +106,7 @@ input.search-bar {
 .search-bar:hover, .search-bar:active, .search-bar:focus {
   outline: none;
   border-bottom: 3px solid white;
-  width: 80%;
+  width: 90%;
   transition: width 0.2s ease-in .2s
 }
 
